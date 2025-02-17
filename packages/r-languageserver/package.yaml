@@ -18,10 +18,10 @@ source:
         VERSION: "{{version}}"
       bin: ./bin/r-languageserver
     - target: win
-      run: .\bin\install.ps1 "$env:VERSION"
+      run: ./bin/install "$VERSION"
       env:
         VERSION: "{{version}}"
-      bin: ./bin/r-languageserver.cmd
+      bin: ./bin/r-languageserver
 
 schemas:
   lsp: vscode:https://raw.githubusercontent.com/REditorSupport/vscode-r-lsp/master/package.json
